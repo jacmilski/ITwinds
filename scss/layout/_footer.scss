@@ -1,0 +1,45 @@
+.footer {
+    padding: 36px 0 50px;
+    background-color: $white;
+
+    @include medium-up {
+        padding: 60px 0;
+    }
+
+    & .flex {
+        flex-direction: column;
+        align-items: flex-start;
+        border-top: 1px solid rgba(161, 161, 170, 0.5);
+        padding-top: 68px;
+
+        @include medium-up {
+            padding-top: 74px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        & p {
+            font-size: $font-size-6;
+            margin-top: 4px;
+
+            @include medium-up {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 25px;
+
+        @include medium-up {
+            margin-top: 10px;
+        }
+
+        & p {
+            font-size: $font-size-6;
+            margin-top: 10px;
+        }
+    }
+}
